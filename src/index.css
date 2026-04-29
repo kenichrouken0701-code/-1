@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Zen+Maru+Gothic:wght@400;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Zen Maru Gothic", system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+}
+
+body {
+  background-color: #FFF9FB;
+  color: #4a4a4a;
+}
+
+/* Custom soft shadow */
+.soft-shadow {
+  box-shadow: 0 10px 25px -5px rgba(255, 182, 193, 0.2), 0 8px 10px -6px rgba(255, 182, 193, 0.1);
+}
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+}
